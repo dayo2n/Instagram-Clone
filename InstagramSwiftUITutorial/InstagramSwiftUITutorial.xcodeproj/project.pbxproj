@@ -36,7 +36,7 @@
 		BF13584327D7414900AB7395 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		BF13584527D74E9400AB7395 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		BF13584727D776E000AB7395 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		BF13584B27D77C5600AB7395 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostGridView.swift; path = InstagramSwiftUITutorial/View/PostGridView.swift; sourceTree = SOURCE_ROOT; };
+		BF13584B27D77C5600AB7395 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostGridView.swift; path = InstagramSwiftUITutorial/View/Items/PostGridView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 		BF13582427D73A1200AB7395 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF13584D27D77DE900AB7395 /* Items */,
 				BF13583927D73FB400AB7395 /* Feed */,
-				BF13583227D73BFB00AB7395 /* Items */,
 				BF13583127D73BEE00AB7395 /* Authentification */,
 				BF13583027D73BE900AB7395 /* Notification */,
 				BF13582F27D73BE200AB7395 /* Search */,
@@ -193,14 +193,6 @@
 			path = Authentification;
 			sourceTree = "<group>";
 		};
-		BF13583227D73BFB00AB7395 /* Items */ = {
-			isa = PBXGroup;
-			children = (
-				BF13584B27D77C5600AB7395 /* PostGridView.swift */,
-			);
-			path = Items;
-			sourceTree = "<group>";
-		};
 		BF13583327D73C3100AB7395 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +228,14 @@
 				BF13584527D74E9400AB7395 /* FeedCell.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		BF13584D27D77DE900AB7395 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				BF13584B27D77C5600AB7395 /* PostGridView.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
