@@ -19,6 +19,7 @@
 		BF13584427D7414900AB7395 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13584327D7414900AB7395 /* SearchView.swift */; };
 		BF13584627D74E9400AB7395 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13584527D74E9400AB7395 /* FeedCell.swift */; };
 		BF13584827D776E000AB7395 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13584727D776E000AB7395 /* SearchBar.swift */; };
+		BF13584C27D77C5600AB7395 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13584B27D77C5600AB7395 /* PostGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		BF13584327D7414900AB7395 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		BF13584527D74E9400AB7395 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		BF13584727D776E000AB7395 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		BF13584B27D77C5600AB7395 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostGridView.swift; path = InstagramSwiftUITutorial/View/PostGridView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 		BF13583227D73BFB00AB7395 /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				BF13584B27D77C5600AB7395 /* PostGridView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			files = (
 				BF13583C27D73FD200AB7395 /* FeedView.swift in Sources */,
 				BF13582B27D73BB700AB7395 /* ContentView.swift in Sources */,
+				BF13584C27D77C5600AB7395 /* PostGridView.swift in Sources */,
 				BF13584227D740F700AB7395 /* UploadPostView.swift in Sources */,
 				BF13581627D7397600AB7395 /* InstagramSwiftUITutorialApp.swift in Sources */,
 				BF13583827D73EEC00AB7395 /* MainTabView.swift in Sources */,
