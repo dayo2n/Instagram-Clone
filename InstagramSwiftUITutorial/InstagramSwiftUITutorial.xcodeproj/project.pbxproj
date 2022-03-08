@@ -20,6 +20,8 @@
 		BF13584627D74E9400AB7395 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13584527D74E9400AB7395 /* FeedCell.swift */; };
 		BF13584827D776E000AB7395 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13584727D776E000AB7395 /* SearchBar.swift */; };
 		BF13584C27D77C5600AB7395 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13584B27D77C5600AB7395 /* PostGridView.swift */; };
+		BF13584F27D77E9B00AB7395 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13584E27D77E9B00AB7395 /* UserCell.swift */; };
+		BF13585127D77EA900AB7395 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13585027D77EA900AB7395 /* UserListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		BF13584527D74E9400AB7395 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		BF13584727D776E000AB7395 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		BF13584B27D77C5600AB7395 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostGridView.swift; path = InstagramSwiftUITutorial/View/Items/PostGridView.swift; sourceTree = SOURCE_ROOT; };
+		BF13584E27D77E9B00AB7395 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		BF13585027D77EA900AB7395 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +238,8 @@
 			isa = PBXGroup;
 			children = (
 				BF13584B27D77C5600AB7395 /* PostGridView.swift */,
+				BF13585027D77EA900AB7395 /* UserListView.swift */,
+				BF13584E27D77E9B00AB7395 /* UserCell.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -316,9 +322,11 @@
 				BF13583827D73EEC00AB7395 /* MainTabView.swift in Sources */,
 				BF13584027D740E900AB7395 /* ProfileView.swift in Sources */,
 				BF13584427D7414900AB7395 /* SearchView.swift in Sources */,
+				BF13584F27D77E9B00AB7395 /* UserCell.swift in Sources */,
 				BF13584827D776E000AB7395 /* SearchBar.swift in Sources */,
 				BF13583E27D740DE00AB7395 /* NotificationView.swift in Sources */,
 				BF13584627D74E9400AB7395 /* FeedCell.swift in Sources */,
+				BF13585127D77EA900AB7395 /* UserListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
