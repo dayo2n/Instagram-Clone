@@ -22,6 +22,7 @@ struct FeedCell: View {
                     .font(.system(size: 14, weight:
                                         .semibold))
             }
+            .padding([.leading], 8)
             
             // post image
             Image("arietty")
@@ -31,12 +32,12 @@ struct FeedCell: View {
                 .clipped()
             
             // acton buttons
-            HStack(spacing: 8) {
+            HStack(spacing: 10) {
                 Button(action: {}, label: {
                 Image(systemName: "heart")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 28, height: 28)
+                        .frame(width: 22, height: 22)
                         .font(.system(size: 20))
                         .padding(4)
                 })
@@ -45,7 +46,7 @@ struct FeedCell: View {
                 Image(systemName: "bubble.right")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 28, height: 28)
+                        .frame(width: 22, height: 22)
                         .font(.system(size: 20))
                         .padding(4)
                 })
@@ -54,20 +55,29 @@ struct FeedCell: View {
                 Image(systemName: "paperplane")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 28, height: 28)
+                        .frame(width: 22, height: 22)
                         .font(.system(size: 20))
                         .padding(4)
                 })
-            }.foregroundColor(.black)
+            }
+            .foregroundColor(.black)
+            .padding(.leading, 4)
             
             //caption
-            HStack {
-                Text("arietty").font(.system(size: 15, weight: .semibold)) + Text("  We're borrowers and as long as we have each other to live, for then we'll keep on living.").font(.system(size: 15))
-            }
             
-            Text("2d").font(.system(size: 14))
+            Text("3 likes").font(.system(size: 14, weight: .semibold))
+                .padding(.leading, 8)
+                .padding(.bottom, 2)
+            
+            HStack {
+                Text("arietty").font(.system(size: 15, weight: .semibold)) + Text(" We're borrowers and as long as we have each other to live, for then we'll keep on living.").font(.system(size: 15))
+            }
+            .padding(.horizontal, 10)
+            
+            Text("2 days ago").font(.system(size: 14))
                 .foregroundColor(.gray)
-                .padding(.top)
+                .padding(.leading, 8)
+                .padding(.top, -2)
         }
     }
 }
