@@ -11,6 +11,7 @@
 - XCode 13.2.1
 
 ---
+### SwiftUI vs StoryBoard
 
 ### 💡 MVVM?
 
@@ -19,3 +20,5 @@
 ### 📸 ScreenShot
 
 ### 📌 Memo
+- @Binding
+- @State
