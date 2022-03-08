@@ -17,6 +17,7 @@
 		BF13584027D740E900AB7395 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13583F27D740E900AB7395 /* ProfileView.swift */; };
 		BF13584227D740F700AB7395 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13584127D740F700AB7395 /* UploadPostView.swift */; };
 		BF13584427D7414900AB7395 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13584327D7414900AB7395 /* SearchView.swift */; };
+		BF13584627D74E9400AB7395 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13584527D74E9400AB7395 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		BF13583F27D740E900AB7395 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BF13584127D740F700AB7395 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		BF13584327D7414900AB7395 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		BF13584527D74E9400AB7395 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				BF13583B27D73FD200AB7395 /* FeedView.swift */,
+				BF13584527D74E9400AB7395 /* FeedCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				BF13584027D740E900AB7395 /* ProfileView.swift in Sources */,
 				BF13584427D7414900AB7395 /* SearchView.swift in Sources */,
 				BF13583E27D740DE00AB7395 /* NotificationView.swift in Sources */,
+				BF13584627D74E9400AB7395 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
