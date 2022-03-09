@@ -25,6 +25,8 @@
 		BF13585327D8830300AB7395 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13585227D8830300AB7395 /* Extensions.swift */; };
 		BF13585527D8853C00AB7395 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13585427D8853C00AB7395 /* NotificationCell.swift */; };
 		BF5110D127D888AB00E79C1F /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5110D027D888AB00E79C1F /* ProfileHeaderView.swift */; };
+		BF5110D327D8905600E79C1F /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5110D227D8905600E79C1F /* UserStatView.swift */; };
+		BF5110D527D8918C00E79C1F /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5110D427D8918C00E79C1F /* ProfileActionButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		BF13585227D8830300AB7395 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BF13585427D8853C00AB7395 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		BF5110D027D888AB00E79C1F /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		BF5110D227D8905600E79C1F /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
+		BF5110D427D8918C00E79C1F /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				BF13583F27D740E900AB7395 /* ProfileView.swift */,
+				BF5110D227D8905600E79C1F /* UserStatView.swift */,
+				BF5110D427D8918C00E79C1F /* ProfileActionButtonView.swift */,
 				BF5110D027D888AB00E79C1F /* ProfileHeaderView.swift */,
 			);
 			path = Profile;
@@ -332,10 +338,12 @@
 				BF13584027D740E900AB7395 /* ProfileView.swift in Sources */,
 				BF13584427D7414900AB7395 /* SearchView.swift in Sources */,
 				BF5110D127D888AB00E79C1F /* ProfileHeaderView.swift in Sources */,
+				BF5110D327D8905600E79C1F /* UserStatView.swift in Sources */,
 				BF13584F27D77E9B00AB7395 /* UserCell.swift in Sources */,
 				BF13584827D776E000AB7395 /* SearchBar.swift in Sources */,
 				BF13583E27D740DE00AB7395 /* NotificationView.swift in Sources */,
 				BF13584627D74E9400AB7395 /* FeedCell.swift in Sources */,
+				BF5110D527D8918C00E79C1F /* ProfileActionButtonView.swift in Sources */,
 				BF13585127D77EA900AB7395 /* UserListView.swift in Sources */,
 				BF13585527D8853C00AB7395 /* NotificationCell.swift in Sources */,
 				BF13585327D8830300AB7395 /* Extensions.swift in Sources */,
