@@ -27,6 +27,7 @@
 		BF5110D127D888AB00E79C1F /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5110D027D888AB00E79C1F /* ProfileHeaderView.swift */; };
 		BF5110D327D8905600E79C1F /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5110D227D8905600E79C1F /* UserStatView.swift */; };
 		BF5110D527D8918C00E79C1F /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5110D427D8918C00E79C1F /* ProfileActionButtonView.swift */; };
+		BFBDCA9C27D8A24D00BC84FE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDCA9B27D8A24D00BC84FE /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		BF5110D027D888AB00E79C1F /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		BF5110D227D8905600E79C1F /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		BF5110D427D8918C00E79C1F /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
+		BFBDCA9B27D8A24D00BC84FE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				BF13585227D8830300AB7395 /* Extensions.swift */,
+				BFBDCA9B27D8A24D00BC84FE /* ImagePicker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				BF13581627D7397600AB7395 /* InstagramSwiftUITutorialApp.swift in Sources */,
 				BF13583827D73EEC00AB7395 /* MainTabView.swift in Sources */,
 				BF13584027D740E900AB7395 /* ProfileView.swift in Sources */,
+				BFBDCA9C27D8A24D00BC84FE /* ImagePicker.swift in Sources */,
 				BF13584427D7414900AB7395 /* SearchView.swift in Sources */,
 				BF5110D127D888AB00E79C1F /* ProfileHeaderView.swift in Sources */,
 				BF5110D327D8905600E79C1F /* UserStatView.swift in Sources */,
