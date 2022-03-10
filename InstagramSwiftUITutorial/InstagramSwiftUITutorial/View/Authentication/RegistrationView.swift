@@ -13,6 +13,11 @@ struct RegistrationView: View {
     @State private var password = ""
     @State private var username = ""
     @State private var fullname = ""
+    
+    @State private var seletedImage: UIImage?
+    @State private var image: Image?
+    @State var imagePickerPresented = false
+    
     @Environment(\.presentationMode) var mode
     
     var body: some View {
@@ -23,16 +28,32 @@ struct RegistrationView: View {
             
             
             VStack {
-                Button(action: {}, label: {
-                    Image("add-image")
-                        .renderingMode(.template)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 140, height: 140)
-                        .foregroundColor(.white)
+                
+                ZStack {
+                    if let image = image {
+                        image
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 140, height: 140)
+                            .clipShape(Circle())
+                            .padding()
                         
-                })
-                    .padding()
+                    } else {
+                        Button(action: {imagePickerPresented.toggle()}, label: {
+                            Image("add-image")
+                                .renderingMode(.template)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 140, height: 140)
+                                .foregroundColor(.white)
+                                
+                        })
+                            .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
+                            ImagePicker(image: $seletedImage)
+                        })
+                        .padding()
+                    }
+                }
                    
                 VStack {
                     // email field
@@ -117,5 +138,12 @@ struct RegistrationView: View {
 struct RegistrationView_Previews: PreviewProvider {
     static var previews: some View {
         RegistrationView()
+    }
+}
+
+extension RegistrationView {
+    func loadImage() {
+        guard let selectedImage = seletedImage else { return }
+        image = Image(uiImage: selectedImage)
     }
 }

@@ -74,14 +74,14 @@ struct LoginView: View {
                         
                         Spacer()
                         
-                        NavigationLink(destination: RegistrationView(), label: {
+                        NavigationLink(destination: RegistrationView().navigationBarHidden(true), label: {
                             // go to sign in
                                 HStack {
                                     Text("Don't have an account?")
                                         .font(.system(size: 13))
                                         .foregroundColor(.white)
                                     
-                                    Text("Sign Up")
+                                    Text("Sign up")
                                         .font(.system(size: 14, weight: .semibold))
                                         .foregroundColor(.white)
                                 }
