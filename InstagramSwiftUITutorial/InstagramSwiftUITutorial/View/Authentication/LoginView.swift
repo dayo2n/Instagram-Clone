@@ -61,7 +61,7 @@ struct LoginView: View {
                         
                         // sign in
                         Button(action: {}, label: {
-                            Text("Sign in")
+                            Text("Sign In")
                                 .font(.headline)
                                 .foregroundColor(.white)
                                 .frame(width: 360, height: 50)
@@ -74,23 +74,22 @@ struct LoginView: View {
                         
                         Spacer()
                         
-                        Button(action: {}, label: {
-                            HStack {
-                                Text("Don't have an account?")
-                                    .font(.system(size: 13))
-                                    .foregroundColor(.white)
-                                
-                                Text("Sign up")
-                                    .font(.system(size: 14, weight: .semibold))
-                                    .foregroundColor(.white)
-                            }
+                        NavigationLink(destination: RegistrationView(), label: {
+                            // go to sign in
+                                HStack {
+                                    Text("Don't have an account?")
+                                        .font(.system(size: 13))
+                                        .foregroundColor(.white)
+                                    
+                                    Text("Sign Up")
+                                        .font(.system(size: 14, weight: .semibold))
+                                        .foregroundColor(.white)
+                                }
+                                .padding(.bottom, 16)
                         })
-                        
-                        // go to sign in
                     }
-                    
-                    Spacer()
                 }
+                .padding(.top, -44)
             }
         }
     }
