@@ -9,6 +9,7 @@
 
 ### 🛠 Tech
 - XCode 13.2.1
+- Package: Firebase, KingFisher
 
 ---
 ### SwiftUI vs StoryBoard
