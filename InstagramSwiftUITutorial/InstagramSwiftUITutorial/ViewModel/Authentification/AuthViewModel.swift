@@ -21,8 +21,21 @@ class AuthViewModel: ObservableObject {
         print("Login")
     }
     
-    func register() {
-        print("Register")
+    func register(withEmail email: String, password: String) {
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            if let error = error {
+                // The email address is badly formatted.
+                // The password must be 6 characters long or more.
+                print(error.localizedDescription)
+                return // 에러 발생하면 리턴은 필수
+            }
+            
+            guard let user = result?.user else { return }
+            self.userSession = user
+            print("Successfully registered user...")
+        }
+        print(email)
+        print(password)
     }
     
     func resetPassword() {

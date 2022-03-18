@@ -65,7 +65,7 @@ struct RegistrationView: View {
                         .foregroundColor(.white)
                         .padding(.horizontal, 32)
                     
-                    // password field
+                    // username field
                     CustomTextField(text: $username, placeholder: Text("Username"), imageName: "person")
                         .padding()
                         .background(Color(.init(white: 1, alpha: 0.15)))
@@ -73,15 +73,15 @@ struct RegistrationView: View {
                         .foregroundColor(.white)
                         .padding(.horizontal, 32)
                     
-                    // username field
-                    CustomTextField(text: $username, placeholder: Text("Full name"), imageName: "person")
+                    // fullname field
+                    CustomTextField(text: $fullname, placeholder: Text("Full name"), imageName: "person")
                         .padding()
                         .background(Color(.init(white: 1, alpha: 0.15)))
                         .cornerRadius(15)
                         .foregroundColor(.white)
                         .padding(.horizontal, 32)
                     
-                    // fullname field
+                    // password field
                     CustomSecureField(text: $password, placeholder: Text("Password"))
                         .padding()
                         .background(Color(.init(white: 1, alpha: 0.15)))
@@ -104,7 +104,7 @@ struct RegistrationView: View {
                     
                     // sign up
                     Button(action: {
-                        viewModel.register()
+                        viewModel.register(withEmail: email, password: password)
                     }, label: {
                         Text("Sign Up")
                             .font(.headline)
