@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var viewModel: AuthViewModel
+    
     var body: some View {
-        MainTabView()
+        Group {
+            // if not logged in show login view
+            if viewModel.userSession == nil {
+                LoginView()
+            }
+            // else show main interface
+            else {
+                MainTabView()
+            }
+        }
     }
 }
 
