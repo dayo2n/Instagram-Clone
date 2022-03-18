@@ -39,7 +39,8 @@
 		BFBDCA9C27D8A24D00BC84FE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDCA9B27D8A24D00BC84FE /* ImagePicker.swift */; };
 		BFBDCA9E27D8AFD100BC84FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDCA9D27D8AFD100BC84FE /* LoginView.swift */; };
 		BFBDCAA027D8AFE400BC84FE /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDCA9F27D8AFE400BC84FE /* RegistrationView.swift */; };
-		BFBDCAA227D8AFF400BC84FE /* ResetOasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDCAA127D8AFF400BC84FE /* ResetOasswordView.swift */; };
+		BFBDCAA227D8AFF400BC84FE /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDCAA127D8AFF400BC84FE /* ResetPasswordView.swift */; };
+		BFEED86527E420E900FD50F6 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEED86427E420E900FD50F6 /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,7 +71,8 @@
 		BFBDCA9B27D8A24D00BC84FE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		BFBDCA9D27D8AFD100BC84FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BFBDCA9F27D8AFE400BC84FE /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
-		BFBDCAA127D8AFF400BC84FE /* ResetOasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetOasswordView.swift; sourceTree = "<group>"; };
+		BFBDCAA127D8AFF400BC84FE /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		BFEED86427E420E900FD50F6 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,7 +242,7 @@
 			children = (
 				BFBDCA9D27D8AFD100BC84FE /* LoginView.swift */,
 				BFBDCA9F27D8AFE400BC84FE /* RegistrationView.swift */,
-				BFBDCAA127D8AFF400BC84FE /* ResetOasswordView.swift */,
+				BFBDCAA127D8AFF400BC84FE /* ResetPasswordView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -262,6 +264,7 @@
 		BF13583527D73C3C00AB7395 /* Authentification */ = {
 			isa = PBXGroup;
 			children = (
+				BFEED86427E420E900FD50F6 /* AuthViewModel.swift */,
 			);
 			path = Authentification;
 			sourceTree = "<group>";
@@ -395,9 +398,10 @@
 				BF13584627D74E9400AB7395 /* FeedCell.swift in Sources */,
 				BF5110D527D8918C00E79C1F /* ProfileActionButtonView.swift in Sources */,
 				BF13585127D77EA900AB7395 /* UserListView.swift in Sources */,
+				BFEED86527E420E900FD50F6 /* AuthViewModel.swift in Sources */,
 				BF13585527D8853C00AB7395 /* NotificationCell.swift in Sources */,
 				BFBDCA9E27D8AFD100BC84FE /* LoginView.swift in Sources */,
-				BFBDCAA227D8AFF400BC84FE /* ResetOasswordView.swift in Sources */,
+				BFBDCAA227D8AFF400BC84FE /* ResetPasswordView.swift in Sources */,
 				BF13585327D8830300AB7395 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

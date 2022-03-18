@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-struct ResetOasswordView: View {
+struct ResetPasswordView: View {
+    @EnvironmentObject var viewModel : AuthViewModel
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct ResetOasswordView_Previews: PreviewProvider {
+struct ResetPasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        ResetOasswordView()
+        ResetPasswordView()
     }
 }
