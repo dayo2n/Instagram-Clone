@@ -12,6 +12,8 @@ class AuthViewModel: ObservableObject {
     
     @Published var userSession: FirebaseAuth.User?
     
+    static let shared = AuthViewModel()
+    
     init() {
         userSession = Auth.auth().currentUser // makes a API call to the firebase server
         // If there is no login information, userSession would be 'nil'
@@ -36,6 +38,11 @@ class AuthViewModel: ObservableObject {
         }
         print(email)
         print(password)
+    }
+    
+    func signout() {
+        self.userSession = nil
+        try? Auth.auth().signOut()
     }
     
     func resetPassword() {
