@@ -20,7 +20,7 @@ struct ImageUploader {
                 print("DEBUG: failed to ipload image \(error.localizedDescription)")
                 return
             }
-            print("Successfully registered user...")
+            
             
             ref.downloadURL { url , _ in
                 guard let imageUrl = url?.absoluteString else { return } // 함수에서 String으로 받기로 해서 

@@ -38,15 +38,17 @@ class AuthViewModel: ObservableObject {
                 }
                 
                 guard let user = result?.user else { return }
-                self.userSession = user
                 
+                // 서버에 보낼 데이터 형태
                 let data = ["email": email,
                             "username": username,
                             "fullname": fullname,
                             "profileImageUrl": imageUrl,
                             "uid": user.uid]
                 
+                // 서버에 데이터 전송
                 Firestore.firestore().collection("users").document(user.uid).setData(data) { _ in
+                    print("Successfully registered user...")
                     self.userSession = user
                 }
             }
