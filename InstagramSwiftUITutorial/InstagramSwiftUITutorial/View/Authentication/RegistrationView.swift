@@ -14,7 +14,7 @@ struct RegistrationView: View {
     @State private var username = ""
     @State private var fullname = ""
     
-    @State private var seletedImage: UIImage?
+    @State private var selectedImage: UIImage?
     @State private var image: Image?
     @State var imagePickerPresented = false
     
@@ -50,7 +50,7 @@ struct RegistrationView: View {
                                 
                         })
                             .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
-                            ImagePicker(image: $seletedImage)
+                            ImagePicker(image: $selectedImage)
                         })
                         .padding()
                     }
@@ -104,7 +104,7 @@ struct RegistrationView: View {
                     
                     // sign up
                     Button(action: {
-                        viewModel.register(withEmail: email, password: password)
+                        viewModel.register(withEmail: email, password: password, image: selectedImage, fullname: fullname, username: username)
                     }, label: {
                         Text("Sign Up")
                             .font(.headline)
@@ -146,7 +146,7 @@ struct RegistrationView_Previews: PreviewProvider {
 
 extension RegistrationView {
     func loadImage() {
-        guard let selectedImage = seletedImage else { return }
+        guard let selectedImage = selectedImage else { return }
         image = Image(uiImage: selectedImage)
     }
 }

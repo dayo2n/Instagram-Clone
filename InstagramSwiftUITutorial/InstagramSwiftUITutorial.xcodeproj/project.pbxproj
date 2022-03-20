@@ -40,6 +40,7 @@
 		BFBDCA9E27D8AFD100BC84FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDCA9D27D8AFD100BC84FE /* LoginView.swift */; };
 		BFBDCAA027D8AFE400BC84FE /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDCA9F27D8AFE400BC84FE /* RegistrationView.swift */; };
 		BFBDCAA227D8AFF400BC84FE /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDCAA127D8AFF400BC84FE /* ResetPasswordView.swift */; };
+		BFC6A38D27E71C9E003B46B9 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6A38C27E71C9E003B46B9 /* ImageUploader.swift */; };
 		BFEED86527E420E900FD50F6 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEED86427E420E900FD50F6 /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		BFBDCA9D27D8AFD100BC84FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BFBDCA9F27D8AFE400BC84FE /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		BFBDCAA127D8AFF400BC84FE /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		BFC6A38C27E71C9E003B46B9 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		BFEED86427E420E900FD50F6 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +160,7 @@
 		BF13582627D73A1F00AB7395 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				BFC6A38C27E71C9E003B46B9 /* ImageUploader.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				BF13584C27D77C5600AB7395 /* PostGridView.swift in Sources */,
 				BFBDCAA027D8AFE400BC84FE /* RegistrationView.swift in Sources */,
 				BF663BC727D9DD7300DFE519 /* CustomTextField.swift in Sources */,
+				BFC6A38D27E71C9E003B46B9 /* ImageUploader.swift in Sources */,
 				BF13584227D740F700AB7395 /* UploadPostView.swift in Sources */,
 				BF13581627D7397600AB7395 /* InstagramSwiftUITutorialApp.swift in Sources */,
 				BF13583827D73EEC00AB7395 /* MainTabView.swift in Sources */,
