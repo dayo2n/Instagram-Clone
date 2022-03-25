@@ -55,7 +55,7 @@ class AuthViewModel: ObservableObject {
                             "uid": user.uid]
                 
                 // 서버에 데이터 전송
-                Firestore.firestore().collection("users").document(user.uid).setData(data) { _ in
+                COLLECTION_USERS.document(user.uid).setData(data) { _ in
                     print("Successfully registered user...")
                     self.userSession = user
                 }
@@ -74,7 +74,7 @@ class AuthViewModel: ObservableObject {
     
     func fetchUser() {
         guard let uid = userSession?.uid else { return }
-        Firestore.firestore().collection("users").document(uid).getDocument
+        COLLECTION_USERS.document(uid).getDocument
         { snapshot, _ in
             print(snapshot?.data()) // user information
         }

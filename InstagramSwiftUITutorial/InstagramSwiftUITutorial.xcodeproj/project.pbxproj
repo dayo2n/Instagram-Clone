@@ -42,6 +42,7 @@
 		BFBDCAA227D8AFF400BC84FE /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDCAA127D8AFF400BC84FE /* ResetPasswordView.swift */; };
 		BFC6A38D27E71C9E003B46B9 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6A38C27E71C9E003B46B9 /* ImageUploader.swift */; };
 		BFEED86527E420E900FD50F6 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEED86427E420E900FD50F6 /* AuthViewModel.swift */; };
+		BFF2F76127EE0A1700D53E27 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2F76027EE0A1700D53E27 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		BFBDCAA127D8AFF400BC84FE /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		BFC6A38C27E71C9E003B46B9 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		BFEED86427E420E900FD50F6 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		BFF2F76027EE0A1700D53E27 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				BFBDCA9B27D8A24D00BC84FE /* ImagePicker.swift */,
 				BF663BC827D9DDB700DFE519 /* CustomSecureField.swift */,
 				BF663BC627D9DD7300DFE519 /* CustomTextField.swift */,
+				BFF2F76027EE0A1700D53E27 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				BFBDCA9E27D8AFD100BC84FE /* LoginView.swift in Sources */,
 				BFBDCAA227D8AFF400BC84FE /* ResetPasswordView.swift in Sources */,
 				BF13585327D8830300AB7395 /* Extensions.swift in Sources */,
+				BFF2F76127EE0A1700D53E27 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
