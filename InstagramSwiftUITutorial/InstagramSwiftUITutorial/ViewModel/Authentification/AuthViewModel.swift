@@ -17,6 +17,7 @@ class AuthViewModel: ObservableObject {
     init() {
         userSession = Auth.auth().currentUser // makes a API call to the firebase server
         // If there is no login information, userSession would be 'nil'
+        fetchUser()
     }
     
     func login(withEail email: String, password: String) {
@@ -72,6 +73,10 @@ class AuthViewModel: ObservableObject {
     }
     
     func fetchUser() {
-        
+        guard let uid = userSession?.uid else { return }
+        Firestore.firestore().collection("users").document(uid).getDocument
+        { snapshot, _ in
+            print(snapshot?.data()) // user information
+        }
     }
 }
