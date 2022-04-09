@@ -15,6 +15,7 @@
 ### SwiftUI vs StoryBoard
 
 ### 💡 MVVM?
+[velog](https://velog.io/@dayo2n/Swift-MVVM-패턴)
 
 ---
 
