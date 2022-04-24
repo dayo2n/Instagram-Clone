@@ -76,7 +76,13 @@ class AuthViewModel: ObservableObject {
         guard let uid = userSession?.uid else { return }
         COLLECTION_USERS.document(uid).getDocument
         { snapshot, _ in
-            print(snapshot?.data()) // user information
+            guard let dictionary = snapshot?.data() else { return }
+            guard let username = dictionary["username"] as? String else { return }
+            guard let email = dictionary["email"] as? String else { return }
+            
+            let user = User(username: username, email: email, profileImageUrl: username, fullname: username, uid: username)
+            
+            
         }
     }
 }
