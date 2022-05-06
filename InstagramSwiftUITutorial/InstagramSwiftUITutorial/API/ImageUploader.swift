@@ -6,7 +6,7 @@
 // file to upload image to firebase
 
 import Foundation
-import Firebase
+import FirebaseStorage
 import UIKit
 
 struct ImageUploader {
