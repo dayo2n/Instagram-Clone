@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct UserListView: View {
+    
+    @ObservedObject var viewModel: SearchViewModel
+    // viewModel = SearchViewModel() 형태로 초기화하면 두 번 호출되니까 이렇게 하면 안됨, SearchView.swift에서 이미 초기화함
+    
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(0..<20) { _ in
+                ForEach(viewModel.users) { _ in
                     NavigationLink (
                         destination: ProfileView(),
                         label: {
@@ -21,11 +25,5 @@ struct UserListView: View {
                 }
             }
         }
-    }
-}
-
-struct UserListView_Previews: PreviewProvider {
-    static var previews: some View {
-        UserListView()
     }
 }

@@ -10,6 +10,7 @@ import SwiftUI
 struct SearchView: View {
     @State var searchText = ""
     @State var inSearchMode = false
+    @ObservedObject var viewModel = SearchViewModel() // helps populate view
     
     var body: some View {
         ScrollView {
@@ -21,7 +22,7 @@ struct SearchView: View {
             ZStack {
                 // 서치모드면 검색한 유저리스트가 보이도록, 아니면 포스트 그리드뷰가 보여야 함
                 if inSearchMode {
-                    UserListView()
+                    UserListView(viewModel: viewModel)
                 } else {
                     PostGridView()
                 }
