@@ -29,6 +29,7 @@ struct CustomTextField: View {
                     .foregroundColor(.white)
                 
                 TextField("", text: $text)
+                    .disableAutocorrection(true)
             }
         }
     }
