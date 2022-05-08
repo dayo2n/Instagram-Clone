@@ -29,6 +29,9 @@ class AuthViewModel: ObservableObject {
             }
             guard let user = result?.user else { return }
             self.userSession = user
+            
+            print("DEBUG: LOGIN SUCCESS \(user)")
+            
             self.fetchUser()
         }
     }
@@ -77,8 +80,11 @@ class AuthViewModel: ObservableObject {
     
     func fetchUser() {
         guard let uid = userSession?.uid else { return }
+        print("DEBUG: uid \(uid)")
         COLLECTION_USERS.document(uid).getDocument { snapshot, _ in
             guard let user = try? snapshot?.data(as: User.self) else { return }
+            
+            print("DEBUG: FETCH \(user.username)")
             
             self.currentUser = user
         }
