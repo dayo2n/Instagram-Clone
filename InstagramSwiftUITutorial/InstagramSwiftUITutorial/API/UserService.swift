@@ -19,8 +19,14 @@ struct UserService {
         }
     }
     
-    static func unfollow() {
+    static func unfollow(uid: String, completion: ((Error?) -> Void)?) {
+        guard let currentUid = AuthViewModel.shared.userSession?.uid else { return }
         
+        COLLECTION_FOLLOWING.document(currentUid)
+            .collection("user-followering").document(uid).delete() { _ in
+                COLLECTION_FOLLOWERS.document(uid)
+                    .collection("user-follwers").document(currentUid).delete(completion: completion) // completion 후 내 코드의 completion handler 실행 후 동작
+            }
     }
     
     static func checkIfUserIsFollowed() {
