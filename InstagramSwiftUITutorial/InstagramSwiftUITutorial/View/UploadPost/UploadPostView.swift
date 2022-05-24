@@ -13,7 +13,7 @@ struct UploadPostView: View {
     @State var postImage: Image?
     @State var captionText = ""
     @State var imagePickerPresented = false
-    @ObservedObject var viewModel = UploadPostViwModel()
+    @ObservedObject var viewModel = UploadPostViewModel()
     
     var body: some View {
         VStack {

@@ -8,7 +8,7 @@
 import SwiftUI
 import Firebase
 
-class UploadPostViwModel: ObservableObject {
+class UploadPostViewModel: ObservableObject {
     
     func uploadPost(caption: String, image: UIImage) {
         guard let user = AuthViewModel.shared.currentUser else { return }

@@ -15,8 +15,7 @@ enum UploadType {
     case post
     
     var filePath : StorageReference {
-        
-        let filename = NSUUID().uuidString
+        let filename = NSUUID().uuidString // unique id generator
         switch self {
         case .profile:
             return Storage.storage().reference(withPath: "/profile_images/\(filename)")
@@ -29,12 +28,11 @@ enum UploadType {
 struct ImageUploader {
     static func uploadImage(image: UIImage,type: UploadType, completion: @escaping(String) -> Void) {
         guard let imageData = image.jpegData(compressionQuality: 0.5) else { return }
-        let filename = NSUUID().uuidString // unique id generator
         let ref = type.filePath
         
         ref.putData(imageData, metadata: nil) { _, error in
             if let error = error {
-                print("DEBUG: failed to ipload image \(error.localizedDescription)")
+                print("DEBUG: failed to upload image \(error.localizedDescription)")
                 return
             }
             
