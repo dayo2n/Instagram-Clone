@@ -56,7 +56,6 @@ struct UploadPostView: View {
                     .padding()
 
             }
-            
             Spacer()
         }
     }
