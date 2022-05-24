@@ -41,7 +41,8 @@ class AuthViewModel: ObservableObject {
         
         guard let image = image else {return}
         
-        ImageUploader.uploadImage(image: image) { imageUrl in
+        // enum을 사용하면 dot 연산자를 이용해 쉽게 선택가능 
+        ImageUploader.uploadImage(image: image, type: .profile) { imageUrl in
             Auth.auth().createUser(withEmail: email, password: password) { result, error in
                 if let error = error {
                     // The email address is badly formatted.

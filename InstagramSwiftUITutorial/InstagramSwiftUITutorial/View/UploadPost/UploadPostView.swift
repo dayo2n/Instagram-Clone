@@ -9,10 +9,11 @@ import SwiftUI
 
 struct UploadPostView: View {
     
-    @State private var seletedImage: UIImage?
+    @State private var selectedImage: UIImage?
     @State var postImage: Image?
     @State var captionText = ""
     @State var imagePickerPresented = false
+    @ObservedObject var viewModel = UploadPostViwModel()
     
     var body: some View {
         VStack {
@@ -27,7 +28,7 @@ struct UploadPostView: View {
                         .padding(.top, 56)
                         .foregroundColor(.black)
                 }).sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
-                    ImagePicker(image: $seletedImage)
+                    ImagePicker(image: $selectedImage)
                 })
             } else if let image = postImage { // 선택한 이미지를 넣도록
                 HStack(alignment: .top) {
@@ -40,7 +41,11 @@ struct UploadPostView: View {
                 }
                 .padding()
                 
-                Button(action: {}, label: {
+                Button(action: {
+                    if let image = selectedImage {
+                        viewModel.uploadPost(caption: captionText, image: image)
+                    }
+                }, label: {
                     Text("Share")
                         .font(.system(size: 16, weight: .semibold))
                         .frame(width: 360, height: 50)
@@ -59,7 +64,7 @@ struct UploadPostView: View {
 
 extension UploadPostView {
     func loadImage() {
-        guard let selectedImage = seletedImage else { return }
+        guard let selectedImage = selectedImage else { return }
         postImage = Image(uiImage: selectedImage)
     }
 }
