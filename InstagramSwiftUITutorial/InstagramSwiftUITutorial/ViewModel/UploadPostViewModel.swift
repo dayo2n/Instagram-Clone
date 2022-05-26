@@ -10,7 +10,7 @@ import Firebase
 
 class UploadPostViewModel: ObservableObject {
     
-    func uploadPost(caption: String, image: UIImage) {
+    func uploadPost(caption: String, image: UIImage, completion: FirestoreCompletion) {
         guard let user = AuthViewModel.shared.currentUser else { return }
         
         // imageUploader가 uploadImage를 호출하면 파이어베이스에 도큐먼트로 데이터를 추가 
@@ -23,9 +23,7 @@ class UploadPostViewModel: ObservableObject {
                         "ownerImageUrl": user.profileImageUrl,
                         "ownerUsername": user.username] as [String: Any]
             
-            COLLECTION_POSTS.addDocument(data: data) { _ in
-                print("DEBUG: Uploaded post")
-            }
+            COLLECTION_POSTS.addDocument(data: data, completion:  completion)
         }
     }
 }
