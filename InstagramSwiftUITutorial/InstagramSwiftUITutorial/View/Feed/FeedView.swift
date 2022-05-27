@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct FeedView: View {
+    
+    @ObservedObject var viewModel = FeedViewModel()
+    
     var body: some View {
         ScrollView { // Embeded HStack
             LazyVStack(spacing: 32) { // 스택 간 간격을 조정
-                ForEach(0 ..< 10) { _ in
-                    FeedCell()
+                ForEach(viewModel.posts) { post in
+                    FeedCell(post: post)
                 }
             }
             .padding(.top)
