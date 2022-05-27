@@ -44,24 +44,37 @@ struct UploadPostView: View {
                 }
                 .padding()
                 
-                Button(action: {
-                    if let image = selectedImage {
-                        viewModel.uploadPost(caption: captionText, image: image) { _ in
-                            captionText = " "
-                            postImage = nil
-                            tabIndex = 0
+                HStack (spacing: 16) {
+                    Button(action: {
+                        captionText = " "
+                        postImage = nil
+                    }, label: {
+                        Text("Cancel")
+                            .font(.system(size: 16, weight: .semibold))
+                            .frame(width: 172, height: 50)
+                            .background(Color.red)
+                            .cornerRadius(5)
+                            .foregroundColor(.white)
+                    })
+                    
+                    Button(action: {
+                        if let image = selectedImage {
+                            viewModel.uploadPost(caption: captionText, image: image) { _ in
+                                captionText = " "
+                                postImage = nil
+                                tabIndex = 0
+                            }
                         }
-                    }
-                }, label: {
-                    Text("Share")
-                        .font(.system(size: 16, weight: .semibold))
-                        .frame(width: 360, height: 50)
-                        .background(Color.blue)
-                        .cornerRadius(5)
-                        .foregroundColor(.white)
-                })
-                    .padding()
-
+                    }, label: {
+                        Text("Share")
+                            .font(.system(size: 16, weight: .semibold))
+                            .frame(width: 172, height: 50)
+                            .background(Color.blue)
+                            .cornerRadius(5)
+                            .foregroundColor(.white)
+                    })
+                }
+                .padding()
             }
             Spacer()
         }
