@@ -44,6 +44,7 @@
 		BF663BC927D9DDB700DFE519 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF663BC827D9DDB700DFE519 /* CustomSecureField.swift */; };
 		BF663BD727D9FEAB00DFE519 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BF663BD627D9FEAB00DFE519 /* Kingfisher */; };
 		BF663BD927D9FF4400DFE519 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF663BD827D9FF4400DFE519 /* GoogleService-Info.plist */; };
+		BF902D1C2843DF6B00C07A57 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF902D1B2843DF6B00C07A57 /* PostGridViewModel.swift */; };
 		BFBDCA9C27D8A24D00BC84FE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDCA9B27D8A24D00BC84FE /* ImagePicker.swift */; };
 		BFBDCA9E27D8AFD100BC84FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDCA9D27D8AFD100BC84FE /* LoginView.swift */; };
 		BFBDCAA027D8AFE400BC84FE /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBDCA9F27D8AFE400BC84FE /* RegistrationView.swift */; };
@@ -86,6 +87,7 @@
 		BF663BC627D9DD7300DFE519 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		BF663BC827D9DDB700DFE519 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		BF663BD827D9FF4400DFE519 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF902D1B2843DF6B00C07A57 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
 		BFBDCA9B27D8A24D00BC84FE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		BFBDCA9D27D8AFD100BC84FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BFBDCA9F27D8AFE400BC84FE /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -196,6 +198,8 @@
 				BF13583427D73C3500AB7395 /* Notification */,
 				BF13583327D73C3100AB7395 /* Feed */,
 				BF161AA9283D06A200337A0C /* UploadPostViewModel.swift */,
+				BF3D48C7282625800061B9F9 /* SearchViewModel.swift */,
+				BF902D1B2843DF6B00C07A57 /* PostGridViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -279,7 +283,6 @@
 		BF13583327D73C3100AB7395 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				BF3D48C7282625800061B9F9 /* SearchViewModel.swift */,
 				BF161AAF2840D0BF00337A0C /* FeedViewModel.swift */,
 			);
 			path = Feed;
@@ -421,6 +424,7 @@
 				BF13584227D740F700AB7395 /* UploadPostView.swift in Sources */,
 				BF13581627D7397600AB7395 /* InstagramSwiftUITutorialApp.swift in Sources */,
 				BF13583827D73EEC00AB7395 /* MainTabView.swift in Sources */,
+				BF902D1C2843DF6B00C07A57 /* PostGridViewModel.swift in Sources */,
 				BF13584027D740E900AB7395 /* ProfileView.swift in Sources */,
 				BFBDCA9C27D8A24D00BC84FE /* ImagePicker.swift in Sources */,
 				BF161AAA283D06A200337A0C /* UploadPostViewModel.swift in Sources */,

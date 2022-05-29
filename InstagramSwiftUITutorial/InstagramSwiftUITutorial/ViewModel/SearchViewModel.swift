@@ -26,8 +26,6 @@ class SearchViewModel: ObservableObject {
             
             self.users = documents.compactMap({try? $0.data(as: User.self)})
             // compactMap
-            
-            print(self.users)
         }
     }
     
