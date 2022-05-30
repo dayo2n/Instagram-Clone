@@ -15,7 +15,7 @@ struct FeedView: View {
         ScrollView { // Embeded HStack
             LazyVStack(spacing: 32) { // 스택 간 간격을 조정
                 ForEach(viewModel.posts) { post in
-                    FeedCell(post: post)
+                    FeedCell(viewModel: FeedCellViewModel(post: post))
                 }
             }
             .padding(.top)

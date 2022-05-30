@@ -10,26 +10,32 @@ import Kingfisher
 
 struct FeedCell: View {
     
-    let post: Post
+    @ObservedObject var viewModel : FeedCellViewModel
+    
+    var didLike: Bool { return viewModel.post.didLike ?? false}
+    
+    init(viewModel: FeedCellViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         VStack(alignment: .leading) {
             HStack{
-                KFImage(URL(string: post.ownerImageUrl))
+                KFImage(URL(string: viewModel.post.ownerImageUrl))
                     .resizable()
                     .scaledToFit()
                     .frame(width: 36, height: 36)
                     .clipped()
                     .cornerRadius(18)
                 
-                Text(post.ownerUsername)
+                Text(viewModel.post.ownerUsername)
                     .font(.system(size: 14, weight:
                                         .semibold))
             }
             .padding([.leading], 8)
             
             // post image
-            KFImage(URL(string: post.imageUrl))
+            KFImage(URL(string: viewModel.post.imageUrl))
                 .resizable()
                 .scaledToFit()
                 .frame(maxHeight: 400)
@@ -37,7 +43,9 @@ struct FeedCell: View {
             
             // acton buttons
             HStack(spacing: 10) {
-                Button(action: {}, label: {
+                Button(action: {
+                    didLike ? viewModel.unlike() : viewModel.like()
+                }, label: {
                 Image(systemName: "heart")
                         .resizable()
                         .scaledToFit()
@@ -69,12 +77,12 @@ struct FeedCell: View {
             
             //caption
             
-            Text("\(post.likes) likes").font(.system(size: 14, weight: .semibold))
+            Text("\(viewModel.post.likes) likes").font(.system(size: 14, weight: .semibold))
                 .padding(.leading, 8)
                 .padding(.bottom, 2)
             
             HStack {
-                Text("\(post.ownerUsername)").font(.system(size: 15, weight: .semibold)) + Text(" \(post.caption)").font(.system(size: 15))
+                Text("\(viewModel.post.ownerUsername)").font(.system(size: 15, weight: .semibold)) + Text(" \(viewModel.post.caption)").font(.system(size: 15))
             }
             .padding(.horizontal, 10)
             

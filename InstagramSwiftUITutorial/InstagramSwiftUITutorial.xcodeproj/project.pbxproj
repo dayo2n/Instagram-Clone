@@ -40,6 +40,7 @@
 		BF5110D127D888AB00E79C1F /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5110D027D888AB00E79C1F /* ProfileHeaderView.swift */; };
 		BF5110D327D8905600E79C1F /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5110D227D8905600E79C1F /* UserStatView.swift */; };
 		BF5110D527D8918C00E79C1F /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5110D427D8918C00E79C1F /* ProfileActionButtonView.swift */; };
+		BF62CDE1284450D700A84123 /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62CDE0284450D700A84123 /* FeedCellViewModel.swift */; };
 		BF663BC727D9DD7300DFE519 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF663BC627D9DD7300DFE519 /* CustomTextField.swift */; };
 		BF663BC927D9DDB700DFE519 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF663BC827D9DDB700DFE519 /* CustomSecureField.swift */; };
 		BF663BD727D9FEAB00DFE519 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BF663BD627D9FEAB00DFE519 /* Kingfisher */; };
@@ -84,6 +85,7 @@
 		BF5110D027D888AB00E79C1F /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		BF5110D227D8905600E79C1F /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		BF5110D427D8918C00E79C1F /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
+		BF62CDE0284450D700A84123 /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewModel.swift; sourceTree = "<group>"; };
 		BF663BC627D9DD7300DFE519 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		BF663BC827D9DDB700DFE519 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		BF663BD827D9FF4400DFE519 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				BF161AAF2840D0BF00337A0C /* FeedViewModel.swift */,
+				BF62CDE0284450D700A84123 /* FeedCellViewModel.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				BF13584827D776E000AB7395 /* SearchBar.swift in Sources */,
 				BF13583E27D740DE00AB7395 /* NotificationView.swift in Sources */,
 				BF663BC927D9DDB700DFE519 /* CustomSecureField.swift in Sources */,
+				BF62CDE1284450D700A84123 /* FeedCellViewModel.swift in Sources */,
 				BF161AAE2840CFD800337A0C /* Post.swift in Sources */,
 				BF3D48C8282625800061B9F9 /* SearchViewModel.swift in Sources */,
 				BF13584627D74E9400AB7395 /* FeedCell.swift in Sources */,

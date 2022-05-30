@@ -17,4 +17,6 @@ struct Post: Identifiable, Decodable {
     let imageUrl: String
     let timestamp: Timestamp // must be import Firebase
     let ownerImageUrl: String
+    
+    var didLike: Bool? = false
 }
