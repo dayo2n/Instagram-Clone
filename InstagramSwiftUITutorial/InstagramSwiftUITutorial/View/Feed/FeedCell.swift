@@ -12,7 +12,7 @@ struct FeedCell: View {
     
     @ObservedObject var viewModel : FeedCellViewModel
     
-    var didLike: Bool { return viewModel.post.didLike ?? false}
+    var didLike: Bool { return viewModel.post.didLike ?? false }
     
     init(viewModel: FeedCellViewModel) {
         self.viewModel = viewModel
