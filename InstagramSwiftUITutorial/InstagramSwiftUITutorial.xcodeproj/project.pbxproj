@@ -57,6 +57,8 @@
 		BFE9855F2846619400AEA19C /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9855E2846619400AEA19C /* CommentCell.swift */; };
 		BFE98561284661A900AEA19C /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE98560284661A900AEA19C /* CommentsViewModel.swift */; };
 		BFEED86527E420E900FD50F6 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEED86427E420E900FD50F6 /* AuthViewModel.swift */; };
+		BFEFF6DC2848A059008381FC /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEFF6DB2848A059008381FC /* CustomInputView.swift */; };
+		BFEFF6DE2848A2D1008381FC /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEFF6DD2848A2D1008381FC /* CommentViewModel.swift */; };
 		BFF2F76127EE0A1700D53E27 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2F76027EE0A1700D53E27 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +107,8 @@
 		BFE9855E2846619400AEA19C /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		BFE98560284661A900AEA19C /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
 		BFEED86427E420E900FD50F6 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		BFEFF6DB2848A059008381FC /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
+		BFEFF6DD2848A2D1008381FC /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
 		BFF2F76027EE0A1700D53E27 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,6 +216,7 @@
 				BF3D48C7282625800061B9F9 /* SearchViewModel.swift */,
 				BF902D1B2843DF6B00C07A57 /* PostGridViewModel.swift */,
 				BFE98560284661A900AEA19C /* CommentsViewModel.swift */,
+				BFEFF6DD2848A2D1008381FC /* CommentViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 				BF13584B27D77C5600AB7395 /* PostGridView.swift */,
 				BF13585027D77EA900AB7395 /* UserListView.swift */,
 				BF13584E27D77E9B00AB7395 /* UserCell.swift */,
+				BFEFF6DB2848A059008381FC /* CustomInputView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -449,6 +455,7 @@
 				BF161AAC283FC62A00337A0C /* TextArea.swift in Sources */,
 				BF5110D127D888AB00E79C1F /* ProfileHeaderView.swift in Sources */,
 				BF2237952827AF1A00BBD8E5 /* UserService.swift in Sources */,
+				BFEFF6DC2848A059008381FC /* CustomInputView.swift in Sources */,
 				BF5110D327D8905600E79C1F /* UserStatView.swift in Sources */,
 				BF13584F27D77E9B00AB7395 /* UserCell.swift in Sources */,
 				BF13584827D776E000AB7395 /* SearchBar.swift in Sources */,
@@ -466,6 +473,7 @@
 				BF223793282794D300BBD8E5 /* ProfileViewModel.swift in Sources */,
 				BF13585527D8853C00AB7395 /* NotificationCell.swift in Sources */,
 				BFBDCA9E27D8AFD100BC84FE /* LoginView.swift in Sources */,
+				BFEFF6DE2848A2D1008381FC /* CommentViewModel.swift in Sources */,
 				BFBDCAA227D8AFF400BC84FE /* ResetPasswordView.swift in Sources */,
 				BFE9855A284660DA00AEA19C /* Comment.swift in Sources */,
 				BF13585327D8830300AB7395 /* Extensions.swift in Sources */,
