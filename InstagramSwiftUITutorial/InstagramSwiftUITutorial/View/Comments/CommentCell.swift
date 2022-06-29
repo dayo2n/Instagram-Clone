@@ -6,18 +6,20 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct CommentCell: View {
+    let comment: Comment
     var body: some View {
         HStack {
-            Image("howl")
+            KFImage(URL(string: comment.profileImageUrl))
                 .resizable()
                 .scaledToFit()
                 .frame(width: 36, height: 36)
                 .clipShape(Circle())
             
-            Text("howl").font(.system(size: 14, weight: .semibold)) +
-            Text(" some test comment for now").font(.system(size: 14))
+            Text(comment.username).font(.system(size: 14, weight: .semibold)) +
+            Text(" \(comment.commentText)").font(.system(size: 14))
             // HStack을 쓰지않는 이유는 자동 Padding 때문인듯 -> 나중에 확인해보기
             
             Spacer()
@@ -27,11 +29,5 @@ struct CommentCell: View {
                 .font(.system(size: 12))
                 .padding(.trailing)
         }.padding(.horizontal)
-    }
-}
-
-struct CommentCell_Previews: PreviewProvider {
-    static var previews: some View {
-        CommentCell()
     }
 }

@@ -55,7 +55,6 @@
 		BFE9855A284660DA00AEA19C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE98559284660DA00AEA19C /* Comment.swift */; };
 		BFE9855D2846618A00AEA19C /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9855C2846618A00AEA19C /* CommentsView.swift */; };
 		BFE9855F2846619400AEA19C /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9855E2846619400AEA19C /* CommentCell.swift */; };
-		BFE98561284661A900AEA19C /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE98560284661A900AEA19C /* CommentsViewModel.swift */; };
 		BFEED86527E420E900FD50F6 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEED86427E420E900FD50F6 /* AuthViewModel.swift */; };
 		BFEFF6DC2848A059008381FC /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEFF6DB2848A059008381FC /* CustomInputView.swift */; };
 		BFEFF6DE2848A2D1008381FC /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEFF6DD2848A2D1008381FC /* CommentViewModel.swift */; };
@@ -105,7 +104,6 @@
 		BFE98559284660DA00AEA19C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		BFE9855C2846618A00AEA19C /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		BFE9855E2846619400AEA19C /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
-		BFE98560284661A900AEA19C /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
 		BFEED86427E420E900FD50F6 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		BFEFF6DB2848A059008381FC /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
 		BFEFF6DD2848A2D1008381FC /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
@@ -149,12 +147,12 @@
 		BF13581427D7397600AB7395 /* InstagramSwiftUITutorial */ = {
 			isa = PBXGroup;
 			children = (
-				BF663BD827D9FF4400DFE519 /* GoogleService-Info.plist */,
-				BF13582827D73A2F00AB7395 /* Utils */,
+				BF13582327D73A0A00AB7395 /* Model */,
+				BF13582427D73A1200AB7395 /* View */,
 				BF13582727D73A2500AB7395 /* ViewModel */,
 				BF13582627D73A1F00AB7395 /* API */,
-				BF13582427D73A1200AB7395 /* View */,
-				BF13582327D73A0A00AB7395 /* Model */,
+				BF13582827D73A2F00AB7395 /* Utils */,
+				BF663BD827D9FF4400DFE519 /* GoogleService-Info.plist */,
 				BF13581527D7397600AB7395 /* InstagramSwiftUITutorialApp.swift */,
 				BF13581927D7397A00AB7395 /* Assets.xcassets */,
 				BF13581B27D7397A00AB7395 /* Preview Content */,
@@ -215,7 +213,6 @@
 				BF161AA9283D06A200337A0C /* UploadPostViewModel.swift */,
 				BF3D48C7282625800061B9F9 /* SearchViewModel.swift */,
 				BF902D1B2843DF6B00C07A57 /* PostGridViewModel.swift */,
-				BFE98560284661A900AEA19C /* CommentsViewModel.swift */,
 				BFEFF6DD2848A2D1008381FC /* CommentViewModel.swift */,
 			);
 			path = ViewModel;
@@ -440,7 +437,6 @@
 				BF13582B27D73BB700AB7395 /* ContentView.swift in Sources */,
 				BF13584C27D77C5600AB7395 /* PostGridView.swift in Sources */,
 				BFBDCAA027D8AFE400BC84FE /* RegistrationView.swift in Sources */,
-				BFE98561284661A900AEA19C /* CommentsViewModel.swift in Sources */,
 				BF663BC727D9DD7300DFE519 /* CustomTextField.swift in Sources */,
 				BFC6A38D27E71C9E003B46B9 /* ImageUploader.swift in Sources */,
 				BF13584227D740F700AB7395 /* UploadPostView.swift in Sources */,
