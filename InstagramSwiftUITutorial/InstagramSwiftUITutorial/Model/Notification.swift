@@ -16,6 +16,9 @@ struct Notification: Identifiable, Decodable {
     let timestamp: Timestamp
     let type: NotificationType
     let uid: String
+    
+    var isFollowed: Bool? = false
+    // have to make this optional because we're using the Decodable protocol here.
 }
 
 enum NotificationType: Int, Decodable {
