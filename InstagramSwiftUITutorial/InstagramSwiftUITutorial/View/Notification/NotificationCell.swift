@@ -22,26 +22,33 @@ struct NotificationCell: View {
     
     var body: some View {
         HStack {
-            // image
-            KFImage(URL(string: viewModel.notification.profileImageUrl))
-                .resizable()
-                .scaledToFill()
-                .frame(width: 40, height: 40)
-                .clipShape(Circle()) // without setting corner radius
-            
-            Text(viewModel.notification.username).font(.system(size: 13, weight: .semibold))
-            + Text(viewModel.notification.type.notificationMessage)
-                .font(.system(size: 14))
+            if let user = viewModel.notification.user {
+                NavigationLink(destination: ProfileView(user: user)) {
+                    // image
+                    KFImage(URL(string: viewModel.notification.profileImageUrl))
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 40, height: 40)
+                        .clipShape(Circle()) // without setting corner radius
+                    
+                    Text(viewModel.notification.username).font(.system(size: 13, weight: .semibold))
+                    + Text(viewModel.notification.type.notificationMessage)
+                        .font(.system(size: 14))
+                }
+            }
             
             Spacer()
             
             if viewModel.notification.type != .follow {
                 if let post = viewModel.notification.post {
-                    KFImage(URL(string: post.imageUrl))
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 40, height: 40)
-                        .clipped()
+                    
+                    NavigationLink(destination: FeedCell(viewModel: FeedCellViewModel(post: post))) {
+                        KFImage(URL(string: post.imageUrl))
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 40, height: 40)
+                            .clipped()
+                    }
                 }
             } else {
                 Button(action: {

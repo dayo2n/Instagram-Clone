@@ -23,7 +23,7 @@ struct FeedCell: View {
             HStack{
                 KFImage(URL(string: viewModel.post.ownerImageUrl))
                     .resizable()
-                    .scaledToFit()
+                    .scaledToFill()
                     .frame(width: 36, height: 36)
                     .clipped()
                     .cornerRadius(18)

@@ -19,7 +19,8 @@ struct Notification: Identifiable, Decodable {
     
     var isFollowed: Bool? = false
     // have to make this optional because we're using the Decodable protocol here.
-    var post: Post? // optional이니까 디폴트값 필요 X 
+    var post: Post? // optional이니까 디폴트값 필요 X
+    var user: User?
 }
 
 enum NotificationType: Int, Decodable {
