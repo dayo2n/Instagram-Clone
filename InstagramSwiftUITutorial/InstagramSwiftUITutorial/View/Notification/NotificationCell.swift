@@ -36,11 +36,13 @@ struct NotificationCell: View {
             Spacer()
             
             if viewModel.notification.type != .follow {
-                Image("karigurashi")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 40, height: 40)
-                    .clipped() // frame에 맞춰 나머지는 자름
+                if let post = viewModel.notification.post {
+                    KFImage(URL(string: post.imageUrl))
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 40, height: 40)
+                        .clipped()
+                }
             } else {
                 Button(action: {
                     isFollowed ? viewModel.unfollow() : viewModel.follow()
