@@ -47,9 +47,10 @@ struct NotificationCell: View {
                 }, label: {
                     Text(isFollowed ? "Following" : "Follow") // 삼항연산 사용
                         .font(.system(size: 14, weight: .semibold))
-                        .frame(width: 175, height: 32)
+                        .frame(width: 100, height: 32)
                         .foregroundColor(isFollowed ? .black : .white)
                         .background(isFollowed ? Color.white : Color.blue)
+                        .cornerRadius(3)
                         .overlay(
                             RoundedRectangle(cornerRadius: 3)
                                 .stroke(Color.gray, lineWidth: isFollowed ? 1 : 0)
