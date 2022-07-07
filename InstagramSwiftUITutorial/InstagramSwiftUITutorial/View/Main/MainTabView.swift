@@ -40,7 +40,7 @@ struct MainTabView: View {
                         Image(systemName: "plus.square")
                     }.tag(2)
                 
-                NotificationView()
+                NotificationsView()
                     .onTapGesture {
                         selectedIndex = 3
                     }

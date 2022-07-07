@@ -11,8 +11,22 @@ import Firebase
 class NotificationsViewModel: ObservableObject {
     @Published var notifications = [Notification]()
     
+    init() {
+        fetchNotifictions()
+    }
+    
     func fetchNotifictions() {
+        guard let uid = AuthViewModel.shared.userSession?.uid else { return }
         
+        let query = COLLECTION_NOTIFICATIONS.document(uid).collection("user-notifications")
+            .order(by: "timestamp", descending: true)
+        
+        query.getDocuments { snapshot, _ in
+            guard let documents = snapshot?.documents else { return }
+            self.notifications = documents.compactMap({ try? $0.data(as: Notification.self) })
+            
+            print(self.notifications)
+        }
     }
     
     // initialize하지않고도 어디서나 호출할 수 있도록 static 함수로 선언

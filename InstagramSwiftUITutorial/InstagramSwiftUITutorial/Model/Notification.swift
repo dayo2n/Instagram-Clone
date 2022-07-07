@@ -14,7 +14,7 @@ struct Notification: Identifiable, Decodable {
     let username: String
     let profileImageUrl: String
     let timestamp: Timestamp
-    let type: Int
+    let type: NotificationType
     let uid: String
 }
 
