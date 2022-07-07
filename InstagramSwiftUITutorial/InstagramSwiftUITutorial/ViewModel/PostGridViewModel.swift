@@ -32,7 +32,8 @@ class PostGridViewModel: ObservableObject {
     }
     
     func fetchExplorPagePosts() {
-        COLLECTION_POSTS.getDocuments { snapshot, _ in
+        // 좋아요순으로 정렬, but 썸네일을 클릭해 피드뷰로 보게되면 업로드 날짜(최신)순으로 정렬됨 -> 이 부분 구현X 
+        COLLECTION_POSTS.order(by: "likes", descending: true).getDocuments { snapshot, _ in
             guard let documents = snapshot?.documents else { return }
             self.posts = documents.compactMap({ try? $0.data(as: Post.self) })
         }
