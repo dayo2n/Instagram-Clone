@@ -32,6 +32,7 @@ class NotificationsViewModel: ObservableObject {
     // initialize하지않고도 어디서나 호출할 수 있도록 static 함수로 선언
     static func uploadNotification(toUid uid: String, type: NotificationType, post: Post? = nil) {
         guard let user = AuthViewModel.shared.currentUser else { return }
+        guard uid != user.id else { return } // 현재 로그인 유저가 본인의 포스트에 날린 알림은 무시
         
         var data: [String: Any] = ["timestamp": Timestamp(date: Date()),
                                    "username": user.username,
