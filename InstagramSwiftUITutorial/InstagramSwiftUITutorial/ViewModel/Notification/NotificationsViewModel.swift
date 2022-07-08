@@ -24,8 +24,6 @@ class NotificationsViewModel: ObservableObject {
         query.getDocuments { snapshot, _ in
             guard let documents = snapshot?.documents else { return }
             self.notifications = documents.compactMap({ try? $0.data(as: Notification.self) })
-            
-            print(self.notifications)
         }
     }
     

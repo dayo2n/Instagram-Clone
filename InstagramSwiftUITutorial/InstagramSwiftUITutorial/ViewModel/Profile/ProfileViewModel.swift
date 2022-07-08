@@ -30,7 +30,6 @@ class ProfileViewModel: ObservableObject {
         
         UserService.unfollow(uid: uid) { _ in
             self.user.isFollowed = false
-            print("DEBUG: UNFOLLOW \(uid)")
         }
     }
     

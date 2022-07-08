@@ -30,8 +30,6 @@ class AuthViewModel: ObservableObject {
             guard let user = result?.user else { return }
             self.userSession = user
             
-            print("DEBUG: LOGIN SUCCESS \(user)")
-            
             self.fetchUser()
         }
     }
@@ -47,7 +45,6 @@ class AuthViewModel: ObservableObject {
                 if let error = error {
                     // The email address is badly formatted.
                     // The password must be 6 characters long or more.
-                    print(error.localizedDescription)
                     return // 에러 발생하면 리턴은 필수
                 }
                 
@@ -62,7 +59,6 @@ class AuthViewModel: ObservableObject {
                 
                 // 서버에 데이터 전송
                 COLLECTION_USERS.document(user.uid).setData(data) { _ in
-                    print("Successfully registered user...")
                     self.userSession = user
                     self.fetchUser()
                 }
@@ -84,8 +80,6 @@ class AuthViewModel: ObservableObject {
         print("DEBUG: uid \(uid)")
         COLLECTION_USERS.document(uid).getDocument { snapshot, _ in
             guard let user = try? snapshot?.data(as: User.self) else { return }
-            
-            print("DEBUG: FETCH \(user.username)")
             
             self.currentUser = user
         }
