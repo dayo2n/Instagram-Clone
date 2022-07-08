@@ -34,6 +34,7 @@
 		BF3904B828757F59008C27F7 /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3904B728757F59008C27F7 /* NotificationsViewModel.swift */; };
 		BF3D48C8282625800061B9F9 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D48C7282625800061B9F9 /* SearchViewModel.swift */; };
 		BF3DCDD12876AF7100BED9D7 /* NotificationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DCDD02876AF7100BED9D7 /* NotificationCellViewModel.swift */; };
+		BF3DCDD32876DCA700BED9D7 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DCDD22876DCA700BED9D7 /* LazyView.swift */; };
 		BF3DE35528252BCF00AC5A90 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BF3DE35428252BCF00AC5A90 /* FirebaseAuth */; };
 		BF3DE35728252BCF00AC5A90 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BF3DE35628252BCF00AC5A90 /* FirebaseFirestore */; };
 		BF3DE35928252BCF00AC5A90 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF3DE35828252BCF00AC5A90 /* FirebaseFirestoreSwift */; };
@@ -93,6 +94,7 @@
 		BF3904B728757F59008C27F7 /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
 		BF3D48C7282625800061B9F9 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		BF3DCDD02876AF7100BED9D7 /* NotificationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCellViewModel.swift; sourceTree = "<group>"; };
+		BF3DCDD22876DCA700BED9D7 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		BF5110D027D888AB00E79C1F /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		BF5110D227D8905600E79C1F /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		BF5110D427D8918C00E79C1F /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				BF663BC627D9DD7300DFE519 /* CustomTextField.swift */,
 				BFF2F76027EE0A1700D53E27 /* Constants.swift */,
 				BF161AAB283FC62A00337A0C /* TextArea.swift */,
+				BF3DCDD22876DCA700BED9D7 /* LazyView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 			files = (
 				BF161AB02840D0BF00337A0C /* FeedViewModel.swift in Sources */,
 				BF13583C27D73FD200AB7395 /* FeedView.swift in Sources */,
+				BF3DCDD32876DCA700BED9D7 /* LazyView.swift in Sources */,
 				BF13582B27D73BB700AB7395 /* ContentView.swift in Sources */,
 				BF13584C27D77C5600AB7395 /* PostGridView.swift in Sources */,
 				BFBDCAA027D8AFE400BC84FE /* RegistrationView.swift in Sources */,
