@@ -30,13 +30,15 @@ struct NotificationCell: View {
                         .scaledToFill()
                         .frame(width: 40, height: 40)
                         .clipShape(Circle()) // without setting corner radius
-                    
-                    Text(viewModel.notification.username)
-                        .font(.system(size: 13, weight: .semibold))
-                    + Text(viewModel.notification.type.notificationMessage)
-                        .font(.system(size: 14))
-                    + Text(" \(viewModel.timestampString)").foregroundColor(.gray)
-                        .font(.system(size: 12))
+
+                    ZStack {
+                        Text("\(viewModel.notification.username)")
+                            .font(.system(size: 13, weight: .semibold)) +
+                        Text(viewModel.notification.type.notificationMessage)
+                            .font(.system(size: 14)) +
+                        Text(" \(viewModel.timestampString)")
+                            .foregroundColor(.gray).font(.system(size: 12))
+                    }.multilineTextAlignment(.leading)
                 }
             }
             
@@ -44,7 +46,6 @@ struct NotificationCell: View {
             
             if viewModel.notification.type != .follow {
                 if let post = viewModel.notification.post {
-                    
                     NavigationLink(destination: FeedCell(viewModel: FeedCellViewModel(post: post))) {
                         KFImage(URL(string: post.imageUrl))
                             .resizable()
