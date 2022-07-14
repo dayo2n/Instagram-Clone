@@ -12,7 +12,6 @@ struct ProfileHeaderView: View {
     
     @ObservedObject var viewModel: ProfileViewModel
     
-    
     var body: some View {
         VStack(alignment: .leading) {
             HStack{
@@ -43,10 +42,12 @@ struct ProfileHeaderView: View {
                 .font(.system(size: 15, weight: .semibold))
                 .padding([.leading, .top])
             
-            Text("Magician")
-                .font(.system(size: 15))
-                .padding(.leading)
-                .padding(.top, 1)
+            if let bio = viewModel.user.bio {
+                Text(bio)
+                    .font(.system(size: 15))
+                    .padding(.leading)
+                    .padding(.top, 1)
+            }
             
             HStack {
                 Spacer()

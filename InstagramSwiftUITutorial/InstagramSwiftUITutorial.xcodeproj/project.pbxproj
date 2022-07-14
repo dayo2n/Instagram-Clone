@@ -36,6 +36,7 @@
 		BF3DCDD12876AF7100BED9D7 /* NotificationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DCDD02876AF7100BED9D7 /* NotificationCellViewModel.swift */; };
 		BF3DCDD32876DCA700BED9D7 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DCDD22876DCA700BED9D7 /* LazyView.swift */; };
 		BF3DCDE0288007C700BED9D7 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DCDDF288007C700BED9D7 /* EditProfileView.swift */; };
+		BF3DCDE228800A7100BED9D7 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DCDE128800A7100BED9D7 /* EditProfileViewModel.swift */; };
 		BF3DE35528252BCF00AC5A90 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BF3DE35428252BCF00AC5A90 /* FirebaseAuth */; };
 		BF3DE35728252BCF00AC5A90 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BF3DE35628252BCF00AC5A90 /* FirebaseFirestore */; };
 		BF3DE35928252BCF00AC5A90 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF3DE35828252BCF00AC5A90 /* FirebaseFirestoreSwift */; };
@@ -97,6 +98,7 @@
 		BF3DCDD02876AF7100BED9D7 /* NotificationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCellViewModel.swift; sourceTree = "<group>"; };
 		BF3DCDD22876DCA700BED9D7 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		BF3DCDDF288007C700BED9D7 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		BF3DCDE128800A7100BED9D7 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		BF5110D027D888AB00E79C1F /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		BF5110D227D8905600E79C1F /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		BF5110D427D8918C00E79C1F /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				BF223792282794D300BBD8E5 /* ProfileViewModel.swift */,
+				BF3DCDE128800A7100BED9D7 /* EditProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				BF2237952827AF1A00BBD8E5 /* UserService.swift in Sources */,
 				BFEFF6DC2848A059008381FC /* CustomInputView.swift in Sources */,
 				BF5110D327D8905600E79C1F /* UserStatView.swift in Sources */,
+				BF3DCDE228800A7100BED9D7 /* EditProfileViewModel.swift in Sources */,
 				BF13584F27D77E9B00AB7395 /* UserCell.swift in Sources */,
 				BF13584827D776E000AB7395 /* SearchBar.swift in Sources */,
 				BF13583E27D740DE00AB7395 /* NotificationsView.swift in Sources */,

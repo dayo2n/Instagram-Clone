@@ -26,7 +26,7 @@ struct ProfileActionButtonView: View {
                             .stroke(Color.gray, lineWidth: 1)
                     )
             }).sheet(isPresented: $showEditProfile, content: {
-                EditProfileView()
+                EditProfileView(viewModel: EditProfileViewModel(user: viewModel.user))
             })
         } else {
             // show follow and messeage buttons
