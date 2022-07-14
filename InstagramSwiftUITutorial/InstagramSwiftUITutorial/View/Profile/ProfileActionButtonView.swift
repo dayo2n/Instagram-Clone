@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ProfileActionButtonView: View {
-    
     @ObservedObject var viewModel: ProfileViewModel
     var isFollowed : Bool { return viewModel.user.isFollowed ?? false}
     @State private var showEditProfile = false
@@ -26,7 +25,7 @@ struct ProfileActionButtonView: View {
                             .stroke(Color.gray, lineWidth: 1)
                     )
             }).sheet(isPresented: $showEditProfile, content: {
-                EditProfileView(viewModel: EditProfileViewModel(user: viewModel.user))
+                EditProfileView(user: $viewModel.user)
             })
         } else {
             // show follow and messeage buttons
