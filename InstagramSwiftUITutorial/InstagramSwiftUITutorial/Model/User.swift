@@ -13,6 +13,7 @@ struct User: Identifiable, Decodable {
     let profileImageUrl: String
     let fullname: String
     @DocumentID var id: String?
+    var bio: String?
     var stats: UserStats?
     var isFollowed: Bool? = false
     
